@@ -1,0 +1,49 @@
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-horizontal" method="POST" action="/article/create">
+            <fieldset>
+                <legend>New Article</legend>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="publicationType">Publication Type</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="publicationType" placeholder="Publication Type" name="publicationType" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="articleTitle">Article Title</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="articleTitle" placeholder="Article Title" name="title" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="keyWords">Key Words</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="keyWords" placeholder="Key Words" name="keyWords" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="summary">Summary</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="summary" placeholder="Summary" name="summary" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="articleContent">Content</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" id="articleContent" rows="5" name="content" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+
+                        <button type="reset" class="btn btn-default">Cancel</button>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

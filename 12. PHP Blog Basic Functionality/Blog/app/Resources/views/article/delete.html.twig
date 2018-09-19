@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-horizontal" method="POST">
+            <fieldset>
+                <legend>Delete Post</legend>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="article_title">Post Title</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="article_title" placeholder="Post Title"
+                               name="article[title]" value="{{ article.title }}" disabled>
+                    </div>
+                </div>                                           
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="article_publicationType">Publication Type</label>
+                     <div class="col-sm-4 ">
+                        <select class="form-control" name="article[publicationType]" disabled> 
+                        <option value="Original Research" class="form-control">Original Research</option>
+                        <option value="Revew Article" class="form-control">Revew Article</option>
+                        <option value="Science Case" class="form-control">Science Case</option>   
+                        <option value="Science Trail" class="form-control">Science Trail</option>  
+                        <option value="Book Review" class="form-control">Book Review</option>                          
+                        <option value="Perspective, Opinion, Commentary" class="form-control">Perspective, Opinion, Commentary</option>                         
+                        </select>                
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="article_keyWords">Key Words</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="article_keyWords" placeholder="Key Words"
+                               name="article[keyWords]"value="{{ article.keyWords }}" disabled>
+                    </div>
+                </div>               
+
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="article_content">Content</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" rows="6" id="article_content"
+                                  name="article[content]" disabled>{{ article.content }}"</textarea>
+                    </div>
+                </div>
+
+                {{ form_row(form._token) }}
+
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <a class="btn btn-default" href="{{ path('blog_index') }}">Cancel</a>
+                        <button type="submit" class="btn btn-primary">Delete</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock main %}

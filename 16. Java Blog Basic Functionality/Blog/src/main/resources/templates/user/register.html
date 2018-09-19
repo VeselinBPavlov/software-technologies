@@ -1,0 +1,61 @@
+<main>
+    <div class="container body-content span=8 offset=2">
+        <div class="well">
+            <form class="form-horizontal" th:action="@{/register}" method="post">
+                <fieldset>
+                    <legend>Register</legend>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user_email">Email</label>
+                        <div class="col-sm-4 ">
+                            <input class="form-control" type="email" id="user_email" placeholder="Email" name="email" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user_fullname">Full Name</label>
+                        <div class="col-sm-4 ">
+                            <input class="form-control" type="text" id="user_fullname" placeholder="Full Name" name="fullName" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user_scienceDegree">Science Degree</label>
+                        <div class="col-sm-4 ">
+                            <select class="form-control" name="scienceDegree" id="user_scienceDegree">
+                                <option value="Bachelor" class="form-control">Bachelor</option>
+                                <option value="Master" class="form-control">Master</option>
+                                <option value="PhD" class="form-control">PhD</option>
+                                <option value="Assistant" class="form-control">Assistant</option>
+                                <option value="Chief Assistant" class="form-control">Chief Assistant</option>
+                                <option value="Associate Professor" class="form-control">Associate Professor</option>
+                                <option value="Professor" class="form-control">Professor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user_university">University</label>
+                        <div class="col-sm-4 ">
+                            <input class="form-control" type="text" id="user_university" placeholder="University" name="university" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user_password_first">Password</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="user_password_first" placeholder="Password" name="password" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user_password_second">Confirm Password</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="user_password_second" placeholder="Password" name="confirmPassword" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <a class="btn btn-default" th:href="@{/}">Cancel</a>
+                            <input value="Submit" type="submit" class="btn btn-primary"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</main>
