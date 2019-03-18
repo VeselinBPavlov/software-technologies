@@ -19,8 +19,5 @@ The "Software Technologies" course provides initial knowledge of the most used s
 09. Java MVC and Spring Overview
 10. C# ASP.NET MVC Overview
 
-## Status:
-Completed
-
 ## Certificate:
 <img src="certificate.jpeg"/>
