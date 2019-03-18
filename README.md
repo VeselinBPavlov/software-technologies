@@ -1,3 +1,10 @@
+<a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
+
+[logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png "Logo Title Text 2"
+
+---
+The "Software Technologies" course provides initial knowledge of the most used software technologies in practice and allows students to orientate which technologies they like to study them more thoroughly. Basic concepts from front-end and back-end development are studied. The course consists of four parts: HTML5 development (HTML + CSS + JavaScript + AJAX + REST), PHP web development (PHP + MySQL), C # Web development (ASP.NET MVC + Entity Framework + SQL Server) Java + Spring MVC + Hibernate + MySQL).
+
 # Course: Software Technologies (C#, Java, JavaScript, PHP)
 
 ## Topics:
